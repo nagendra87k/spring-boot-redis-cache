@@ -1,0 +1,9 @@
+spring:
+  data:
+    cassandra:
+      port: 9042
+      contact-points: localhost
+      keyspace: spring_boot_keyspace
+      local-datacenter: datacenter1
+      schema-action: CREATE_IF_NOT_EXISTS
+      entity-base-package: com.nagendra.cassendra.model
