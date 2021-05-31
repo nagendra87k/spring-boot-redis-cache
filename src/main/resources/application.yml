@@ -1,4 +1,5 @@
 spring:
+  #Cassandra configuration. As we are running Cassandra on Docker we are setting up its configuration.
   data:
     cassandra:
       port: 9042
@@ -7,3 +8,8 @@ spring:
       local-datacenter: datacenter1
       schema-action: CREATE_IF_NOT_EXISTS
       entity-base-package: com.nagendra.cassendra.model
+
+  # Redis configuration. As we are running Redis on Docker we are setting up its configuration.
+  redis:
+    host: localhost
+    port: 6379
